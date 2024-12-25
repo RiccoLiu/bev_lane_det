@@ -1,3 +1,12 @@
+# 搭建开发环境
+conda create -n py_3.7 python=3.7  
+conda activate py_3.7  
+pip install -r requirement.txt  
+pip install --upgrade opencv-python  
+pip install --upgrade opencv-contrib-python  
+
+-----------------
+
 # BEV-LaneDet: a Simple and Effective 3D Lane Detection Baseline 
 ## Introduction
 BEV-LaneDet is an efficient and robust monocular 3D lane detection system. First, we introduce the Virtual Camera, which unifies the intrinsic/extrinsic parameters of cameras mounted on different vehicles to ensure the consistency of the spatial relationship between cameras. It can effectively promote the learning process due to the unified visual space. Secondly, we propose a simple but efficient 3D lane representation called Key-Points Representation. This module is more suitable for representing the complicated and diverse 3D lane structures. Finally, we present a lightweight and chip-friendly spatial transformation module called Spatial Transformation Pyramid to transform multi-scale front view features into BEV features.  Experimental results demonstrate that our
